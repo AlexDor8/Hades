@@ -18,6 +18,7 @@ public class Manager {
 		return manager;
  	}
 	
+	//Constructor privado
 	private Manager() {
 		lecturaPantallas();
 	}
