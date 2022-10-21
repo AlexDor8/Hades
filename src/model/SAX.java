@@ -12,14 +12,14 @@ import org.xml.sax.SAXException;
 
 public class SAX {
 
-	private static File ficheroEntrada() {
+	private File ficheroEntrada() {
 		String rutaDirectorio = System.getProperty("user.dir");
 		String rutaFichero = rutaDirectorio + File.separator + "src" + File.separator+ "resources" +File.separator + "entrada.xml";
 		File ficheroEntrada = new File(rutaFichero);
 		return ficheroEntrada;
 	}
 	
-	public static void leerXML() {
+	public void leerXML() {
 		SAXParserFactory SAXParserFactory = javax.xml.parsers.SAXParserFactory.newInstance();
 		try {
 			SAXParser saxParser = SAXParserFactory.newSAXParser();
