@@ -36,5 +36,9 @@ public class DOM {
 		}
 	}
 	
+	public void generarXML() {
+		
+	}
+	
 	
 }
