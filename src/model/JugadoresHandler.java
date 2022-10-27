@@ -11,8 +11,14 @@ public class JugadoresHandler extends DefaultHandler {
 	private ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
 	private Jugador jugador;
 	private StringBuilder stringBuilder = new StringBuilder();
+	
+	
 
 	
+	public void setJugadores(ArrayList<Jugador> jugadores) {
+		this.jugadores = jugadores;
+	}
+
 	public ArrayList<Jugador> getJugadores() {
 		return jugadores;
 	}
@@ -34,6 +40,7 @@ public class JugadoresHandler extends DefaultHandler {
 			jugador.setEstado(attributes.getValue("estado"));
 			break;
 		}
+		
 	}
 
 

@@ -23,9 +23,9 @@ public class Manager {
 		lecturaPantallas();
 	}
 
-	ArrayList<String[]> pantallas = new ArrayList<String[]>();
+	static ArrayList<String[]> pantallas = new ArrayList<String[]>();
 
-	private  File ficheroPantallas() {
+	private static  File ficheroPantallas() {
 		String rutaDirectorio = System.getProperty("user.dir");
 		String rutaFichero = rutaDirectorio + File.separator + "src" + File.separator + "resources" + File.separator
 				+ "pantallas.txt";
@@ -33,7 +33,7 @@ public class Manager {
 		return ficheroPantallas;
 	}
 
-	private void lecturaPantallas() {
+	public static ArrayList<String[]> lecturaPantallas() {
 		BufferedReader br = null;
 		int i = 0;
 		try {
@@ -45,9 +45,9 @@ public class Manager {
 				pantallas.add(pantallaElemento);
 				for (int j = 0; j < pantallaElemento.length; j++) {
 
-					System.out.print(pantallas.get(i)[j]);
+					//System.out.print(pantallas.get(i)[j]);
 				}
-				System.out.println("");
+				//System.out.println("");
 				i++;
 
 			}
@@ -63,6 +63,7 @@ public class Manager {
 				System.out.println("Error al cerrar el fichero");
 			}
 		}
+		return pantallas;
 	}
 
 }

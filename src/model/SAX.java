@@ -19,14 +19,15 @@ public class SAX {
 		return ficheroEntrada;
 	}
 	
-	public void leerXML() {
+	public ArrayList<Jugador> leerXML() {
 		SAXParserFactory SAXParserFactory = javax.xml.parsers.SAXParserFactory.newInstance();
+		ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
 		try {
 			SAXParser saxParser = SAXParserFactory.newSAXParser();
 			JugadoresHandler jugadoresHandler = new JugadoresHandler();
 			try {
 				saxParser.parse(ficheroEntrada(), jugadoresHandler);
-				ArrayList<Jugador> jugadores = jugadoresHandler.getJugadores();
+				jugadores = jugadoresHandler.getJugadores();
 				for (Jugador j: jugadores) {
 					System.out.println(j);
 				}
@@ -36,7 +37,7 @@ public class SAX {
 		} catch (ParserConfigurationException | SAXException e) {
 			e.printStackTrace();
 		}
-		
+		return jugadores;
 	}
 }
 

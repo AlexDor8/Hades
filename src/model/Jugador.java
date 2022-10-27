@@ -12,6 +12,14 @@ public class Jugador {
 	}
 	
 	
+	public Jugador(String nombre, int puntuacion, String estado, String pantalla) {
+		this.nombre = nombre;
+		this.puntuacion = puntuacion;
+		this.estado = estado;
+		this.pantalla = pantalla;
+	}
+
+
 	public String getNombre() {
 		return nombre;
 	}
