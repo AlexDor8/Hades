@@ -15,6 +15,7 @@ public class Manager {
 
 	private static Manager manager;
 
+	//Solo podemos crear una única instancia
 	public static Manager getInstance() {
 		if (manager == null) {
 			manager = new Manager();

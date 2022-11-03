@@ -10,6 +10,10 @@ import java.util.ArrayList;
 public class Reader {
 	ArrayList<String[]> pantallas = new ArrayList<String[]>();
 
+	/**
+	 * 
+	 * @return devolvemos el fichero con las pantallas
+	 */
 	private File ficheroPantallas() {
 		String rutaDirectorio = System.getProperty("user.dir");
 		String rutaFichero = rutaDirectorio + File.separator + "src" + File.separator + "resources" + File.separator
@@ -18,14 +22,23 @@ public class Reader {
 		return ficheroPantallas;
 	}
 
+	/**
+	 * Leemeos el fichero con las pantallas y lo guardamos en un Arraylist que
+	 * contendrá arrays de Strings, esto lo haremos para luego recorrerlo como una
+	 * matriz
+	 * 
+	 * @return devolvemos el Arraylist donde hemos almacenado las pantallas
+	 */
 	public ArrayList<String[]> lecturaPantallas() {
 		BufferedReader br = null;
 		int i = 0;
 		try {
 			String linea = "";
 			br = new BufferedReader(new FileReader(ficheroPantallas()));
+			// Leemos el fichero linea a linea
 			while ((linea = br.readLine()) != null) {
-
+				// Separamos las lineas que hemos leido praviamente y guardamos cada elemento en
+				// un ArrayList
 				String[] pantallaElemento = linea.split(" ");
 				pantallas.add(pantallaElemento);
 				for (int j = 0; j < pantallaElemento.length; j++) {
