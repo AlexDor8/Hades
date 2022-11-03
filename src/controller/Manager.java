@@ -14,8 +14,11 @@ import model.SAX;
 public class Manager {
 
 	private static Manager manager;
+	private SAX SAX;
+	private Reader reader;
+	private DOM dom;
 
-	//Solo podemos crear una única instancia
+	// Solo podemos crear una única instancia
 	public static Manager getInstance() {
 		if (manager == null) {
 			manager = new Manager();
@@ -25,10 +28,13 @@ public class Manager {
 
 	// Constructor privado
 	private Manager() {
-		SAX SAX = new SAX();
-		Reader reader = new Reader();
+		this.SAX = new SAX();
+		this.dom = new DOM();
+		this.reader = new Reader();
+	}
+
+	public void run() {
 		reader.lecturaPantallas();
-		DOM dom = new DOM();
 		dom.generarDocument(SAX.leerXML(), reader.lecturaPantallas());
 		dom.generarXML();
 	}
