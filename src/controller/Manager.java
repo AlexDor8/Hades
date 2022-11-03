@@ -7,63 +7,29 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import model.DOM;
+import model.Reader;
+import model.SAX;
+
 public class Manager {
-	
+
 	private static Manager manager;
-	
+
 	public static Manager getInstance() {
 		if (manager == null) {
 			manager = new Manager();
 		}
 		return manager;
- 	}
-	
-	//Constructor privado
+	}
+
+	// Constructor privado
 	private Manager() {
-		lecturaPantallas();
-	}
-
-	static ArrayList<String[]> pantallas = new ArrayList<String[]>();
-
-	private static  File ficheroPantallas() {
-		String rutaDirectorio = System.getProperty("user.dir");
-		String rutaFichero = rutaDirectorio + File.separator + "src" + File.separator + "resources" + File.separator
-				+ "pantallas.txt";
-		File ficheroPantallas = new File(rutaFichero);
-		return ficheroPantallas;
-	}
-
-	public static ArrayList<String[]> lecturaPantallas() {
-		BufferedReader br = null;
-		int i = 0;
-		try {
-			String linea = "";
-			br = new BufferedReader(new FileReader(ficheroPantallas()));
-			while ((linea = br.readLine()) != null) {
-
-				String[] pantallaElemento = linea.split(" ");
-				pantallas.add(pantallaElemento);
-				for (int j = 0; j < pantallaElemento.length; j++) {
-
-					//System.out.print(pantallas.get(i)[j]);
-				}
-				//System.out.println("");
-				i++;
-
-			}
-		} catch (FileNotFoundException e) {
-			System.out.println("Fichero no encontrado" + e.getMessage());
-		} catch (IOException e) {
-			System.out.println("Error al leer el fichero");
-			e.printStackTrace();
-		} finally {
-			try {
-				br.close();
-			} catch (IOException e) {
-				System.out.println("Error al cerrar el fichero");
-			}
-		}
-		return pantallas;
+		SAX SAX = new SAX();
+		Reader reader = new Reader();
+		reader.lecturaPantallas();
+		DOM dom = new DOM();
+		dom.generarDocument(SAX.leerXML(), reader.lecturaPantallas());
+		dom.generarXML();
 	}
 
 }

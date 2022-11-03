@@ -51,6 +51,56 @@
 		<pixel col="7" fil="17">_</pixel>
 		<pixel col="8" fil="17">_</pixel>
 		<pixel col="9" fil="17">_</pixel>
+		<pixel col="0" fil="32">.</pixel>
+		<pixel col="1" fil="32">.</pixel>
+		<pixel col="2" fil="32">.</pixel>
+		<pixel col="3" fil="32">.</pixel>
+		<pixel col="4" fil="32">.</pixel>
+		<pixel col="5" fil="32">.</pixel>
+		<pixel col="6" fil="32">.</pixel>
+		<pixel col="7" fil="32">.</pixel>
+		<pixel col="8" fil="32">.</pixel>
+		<pixel col="9" fil="32">.</pixel>
+		<pixel col="0" fil="33">.</pixel>
+		<pixel col="1" fil="33">_</pixel>
+		<pixel col="2" fil="33">o</pixel>
+		<pixel col="3" fil="33">.</pixel>
+		<pixel col="4" fil="33">.</pixel>
+		<pixel col="5" fil="33">.</pixel>
+		<pixel col="6" fil="33">.</pixel>
+		<pixel col="7" fil="33">.</pixel>
+		<pixel col="8" fil="33">.</pixel>
+		<pixel col="9" fil="33">.</pixel>
+		<pixel col="0" fil="34">.</pixel>
+		<pixel col="1" fil="34">_</pixel>
+		<pixel col="2" fil="34">_</pixel>
+		<pixel col="3" fil="34">.</pixel>
+		<pixel col="4" fil="34">.</pixel>
+		<pixel col="5" fil="34">.</pixel>
+		<pixel col="6" fil="34">.</pixel>
+		<pixel col="7" fil="34">.</pixel>
+		<pixel col="8" fil="34">.</pixel>
+		<pixel col="9" fil="34">.</pixel>
+		<pixel col="0" fil="35">.</pixel>
+		<pixel col="1" fil="35">_</pixel>
+		<pixel col="2" fil="35">_</pixel>
+		<pixel col="3" fil="35">_</pixel>
+		<pixel col="4" fil="35">.</pixel>
+		<pixel col="5" fil="35">_</pixel>
+		<pixel col="6" fil="35">_</pixel>
+		<pixel col="7" fil="35">_</pixel>
+		<pixel col="8" fil="35">.</pixel>
+		<pixel col="9" fil="35">S</pixel>
+		<pixel col="0" fil="36">X</pixel>
+		<pixel col="1" fil="36">_</pixel>
+		<pixel col="2" fil="36">.</pixel>
+		<pixel col="3" fil="36">_</pixel>
+		<pixel col="4" fil="36">_</pixel>
+		<pixel col="5" fil="36">_</pixel>
+		<pixel col="6" fil="36">.</pixel>
+		<pixel col="7" fil="36">_</pixel>
+		<pixel col="8" fil="36">_</pixel>
+		<pixel col="9" fil="36">_</pixel>
 	</pantalla>
 	<pantalla jugador="Maria" nivel="#1">
 		<pixel col="0" fil="1">.</pixel>
@@ -103,5 +153,55 @@
 		<pixel col="7" fil="5">.</pixel>
 		<pixel col="8" fil="5">_</pixel>
 		<pixel col="9" fil="5">X</pixel>
+		<pixel col="0" fil="20">.</pixel>
+		<pixel col="1" fil="20">.</pixel>
+		<pixel col="2" fil="20">.</pixel>
+		<pixel col="3" fil="20">.</pixel>
+		<pixel col="4" fil="20">.</pixel>
+		<pixel col="5" fil="20">.</pixel>
+		<pixel col="6" fil="20">.</pixel>
+		<pixel col="7" fil="20">.</pixel>
+		<pixel col="8" fil="20">.</pixel>
+		<pixel col="9" fil="20">.</pixel>
+		<pixel col="0" fil="21">S</pixel>
+		<pixel col="1" fil="21">_</pixel>
+		<pixel col="2" fil="21">o</pixel>
+		<pixel col="3" fil="21">_</pixel>
+		<pixel col="4" fil="21">.</pixel>
+		<pixel col="5" fil="21">.</pixel>
+		<pixel col="6" fil="21">.</pixel>
+		<pixel col="7" fil="21">.</pixel>
+		<pixel col="8" fil="21">.</pixel>
+		<pixel col="9" fil="21">.</pixel>
+		<pixel col="0" fil="22">.</pixel>
+		<pixel col="1" fil="22">.</pixel>
+		<pixel col="2" fil="22">.</pixel>
+		<pixel col="3" fil="22">_</pixel>
+		<pixel col="4" fil="22">_</pixel>
+		<pixel col="5" fil="22">_</pixel>
+		<pixel col="6" fil="22">.</pixel>
+		<pixel col="7" fil="22">.</pixel>
+		<pixel col="8" fil="22">.</pixel>
+		<pixel col="9" fil="22">.</pixel>
+		<pixel col="0" fil="23">.</pixel>
+		<pixel col="1" fil="23">.</pixel>
+		<pixel col="2" fil="23">.</pixel>
+		<pixel col="3" fil="23">.</pixel>
+		<pixel col="4" fil="23">.</pixel>
+		<pixel col="5" fil="23">_</pixel>
+		<pixel col="6" fil="23">_</pixel>
+		<pixel col="7" fil="23">_</pixel>
+		<pixel col="8" fil="23">_</pixel>
+		<pixel col="9" fil="23">.</pixel>
+		<pixel col="0" fil="24">.</pixel>
+		<pixel col="1" fil="24">.</pixel>
+		<pixel col="2" fil="24">.</pixel>
+		<pixel col="3" fil="24">.</pixel>
+		<pixel col="4" fil="24">.</pixel>
+		<pixel col="5" fil="24">.</pixel>
+		<pixel col="6" fil="24">.</pixel>
+		<pixel col="7" fil="24">.</pixel>
+		<pixel col="8" fil="24">_</pixel>
+		<pixel col="9" fil="24">X</pixel>
 	</pantalla>
 </pantallas>

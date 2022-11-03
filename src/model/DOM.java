@@ -47,10 +47,10 @@ public class DOM {
 			for (int ii = 0; ii < niveles.size(); ii++) {
 				for (int j = 0; j < niveles.get(ii).length; j++) {
 					if (jugadores.get(i).getPantalla().equals(niveles.get(ii)[j])) {
-						for (int iii = ii+1; iii < niveles.size(); iii++) {
+						for (int iii = ii + 1; iii < niveles.size(); iii++) {
 							for (int jj = j; jj < niveles.get(iii).length; jj++) {
 								if (niveles.get(iii)[jj].contains("#")) {
-									iii = niveles.size()-1;
+									iii = niveles.size() - 1;
 									break;
 								}
 								Element pixel = document.createElement("pixel");
@@ -58,7 +58,6 @@ public class DOM {
 								pantalla.appendChild(pixel);
 								pixel.setAttribute("col", String.valueOf(jj));
 								pixel.setAttribute("fil", String.valueOf(iii));
-								
 
 							}
 						}

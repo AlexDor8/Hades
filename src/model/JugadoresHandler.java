@@ -11,10 +11,7 @@ public class JugadoresHandler extends DefaultHandler {
 	private ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
 	private Jugador jugador;
 	private StringBuilder stringBuilder = new StringBuilder();
-	
-	
 
-	
 	public void setJugadores(ArrayList<Jugador> jugadores) {
 		this.jugadores = jugadores;
 	}
@@ -22,7 +19,7 @@ public class JugadoresHandler extends DefaultHandler {
 	public ArrayList<Jugador> getJugadores() {
 		return jugadores;
 	}
-	
+
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
 		super.startElement(uri, localName, qName, attributes);
@@ -40,14 +37,13 @@ public class JugadoresHandler extends DefaultHandler {
 			jugador.setEstado(attributes.getValue("estado"));
 			break;
 		}
-		
-	}
 
+	}
 
 	@Override
 	public void endElement(String uri, String localName, String qName) throws SAXException {
 		super.endElement(uri, localName, qName);
-		switch(qName) {
+		switch (qName) {
 		case "puntuacion":
 			jugador.setPuntuacion(Integer.parseInt(stringBuilder.toString()));
 			break;

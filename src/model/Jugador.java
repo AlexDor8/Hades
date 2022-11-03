@@ -55,7 +55,7 @@ public class Jugador {
 	
 	
 
-	public String  getPantalla() {
+	public String getPantalla() {
 		return pantalla;
 	}
 
